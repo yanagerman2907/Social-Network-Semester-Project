@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfSocialNetwork.Windows.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSocialNetwork"
+        mc:Ignorable="d"
+        Height="450" Width="350" 
+        ResizeMode="NoResize" 
+        Background="WhiteSmoke" 
+        MouseMove="Window_MouseMove"
+        WindowStartupLocation="CenterScreen" 
+        FontFamily="Georgia">
+
+    <Grid Background="#add7db" Margin="0,20,0,0">
+
+        <Label Content="Registration" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" Foreground="#7451eb" Height="35" />
+        <StackPanel VerticalAlignment="Center" Margin="20 20 20 20">
+            <Label Content="FirstName" Margin="0, 10, 0, -5"/>
+            <TextBox Name="firstName" Margin="0,5,0,-5" FontSize="18" />
+            <Label Content="LastName" Margin="0, 10, 0, -5"/>
+            <TextBox Name="lastName" Margin="0,10,0,-5" FontSize="18" />
+            <Label Content="Login" Margin="0, 10, 0, -5"/>
+            <TextBox Name="login" Margin="0,10,0,-5"  FontSize="18" TextChanged="login_TextChanged"/>
+            <Label Content="Password" Margin="0, 10, 0, -5"/>
+            <PasswordBox Name="pwd" Margin="0,10,-0.4,-5" FontSize="18"/>
+            <Label Content="Repeat Password" Margin="0, 10, 0, -5"/>
+            <PasswordBox Name="pwd2" Margin="0,10,-0.4,-5" FontSize="18"/>
+            <Button Height="30" Margin="0,20,0,5" Content="Save  &amp;  Start" Background="#7451eb" BorderBrush="IndianRed" Foreground="WhiteSmoke"  Click="Button_Login" Width="305"/>
+            <Button Height="30" Margin="0,0,0,5" Content="Cancel" Background="#00adbd" BorderBrush="IndianRed" Foreground="WhiteSmoke"  Click="Button_Cancel" Width="305"/>
+        </StackPanel>
+    </Grid>
+</Window>

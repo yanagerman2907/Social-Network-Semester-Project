@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="WpfSocialNetwork.UserInformation.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSocialNetwork"
+        mc:Ignorable="d"
+        Height="600" Width="800"
+        Background="#add7db"
+        FontFamily="Georgia">
+
+    <Grid>
+        <StackPanel VerticalAlignment="Center" Margin="100,94,100,57" Height="449">
+            <Label Content="Edit Profile Info" Foreground="#7451eb" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20"/>
+            <Label Content="FirstName" Margin="0, 5, 0, -5"/>
+            <TextBox Name="firstName" Margin="0,5,0,-5" FontSize="15" />
+            <Label Content="LastName" Margin="0, 5, 0, -5"/>
+            <TextBox Name="lastName" Margin="0,5,0,-5" FontSize="15" />
+            <Label Content="Login" Margin="0, 5, 0, -5"/>
+            <TextBox Name="login" Margin="0,5,0,10"  FontSize="15"/>
+            <Button Width="176" Margin="417,0,0,0" Content="Save" Background="#00838f" BorderThickness="0" Foreground="WhiteSmoke" Height="20" Click="Save_Click"/>
+
+            <Label Content="Change Password" Foreground="#7451eb" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20"/>
+            <Label Content="Old password" Margin="0, 5, 0, -5"/>
+            <PasswordBox Name="old_pwd" Margin="0,5,0,-5" FontSize="15"/>
+            <Label Content="New password" Margin="0, 5, 0, -5"/>
+            <PasswordBox Name="pwd" Margin="0,5,0,-5" FontSize="15"/>
+            <Label Content="Repeat new password" Margin="0, 5, 0, -5"/>
+            <PasswordBox Name="pwd2" Margin="0,5,0,-5" FontSize="15"/>
+            <Button Width="176" Margin="417,16,0,0" Content="Save" Background="#00838f" BorderThickness="0" Foreground="WhiteSmoke" Height="20" Click="Save_Pwd_Click"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

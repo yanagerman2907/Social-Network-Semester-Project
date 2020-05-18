@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfSocialNetwork.Windows.Comments"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSocialNetwork"
+        mc:Ignorable="d"
+        Height="350" Width="300"
+        Background="#add7db"
+        FontFamily="Georgia"
+        ResizeMode="NoResize" 
+        FontSize="18">
+    <Grid>
+        <ListBox Name="lbxComments" Margin="20,20,20,50" FontStyle="Italic" VerticalAlignment="Stretch" Background="White" BorderThickness="0"/>
+        <Button Width="255" BorderThickness="0" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="20,0,19.667,10" Content="Close" Background="#00adbd" Foreground="WhiteSmoke" FontSize="20" Click="Cancel_Click" Height="30"/>
+    </Grid>
+</Window>

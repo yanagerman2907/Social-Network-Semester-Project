@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="WpfSocialNetwork.UserInformation.MyPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSocialNetwork"
+        mc:Ignorable="d"
+        Height="600" Width="800"  
+        Background="#add7db"
+        FontFamily="Georgia">
+    <Grid>
+        <Label Name="info" Content="My Page" Foreground="#7451eb" FontSize="18" Margin="31,33,585,481"/>
+
+        <StackPanel VerticalAlignment="Center" Margin="239,109,43,132" Height="359" Background="WhiteSmoke">
+            <Label Content="Timeline" Name="Header" Foreground="#7451eb" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="20" FontSize="25" FontWeight="Bold"/>
+            <Label Name="Timeline"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5"  FontSize="20"/>
+        </StackPanel>
+
+        <Button Width="172" x:Name="btnLikers" Height="37" Background="Transparent" BorderThickness="0" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="323,0,305,119" Content="Liked by"  Click="WhoLiked"/>
+        <Button Width="159" x:Name="btnComments" Height="37" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="500,0,141,119" Content="View comments" Background="Transparent" BorderThickness="0" Click="WhoCommented"/>
+        <Button Width="82" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="652,0,66,117" Foreground="WhiteSmoke" Background="#00adbd" BorderBrush="Transparent" Name="btnComment" Click="Comment" Height="37" Content="Comment" />
+
+        <Button Content="Like" Width="83" BorderBrush="Transparent" BorderThickness="3" Background="#7451eb" Foreground="WhiteSmoke" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="253,0,464,119"  Name="btnLike" Click="Like" Height="37" RenderTransformOrigin="0.5,0.505"/>
+
+        <Label Name="date" FontStyle="Oblique" Margin="537,391,43,183"/>
+        <Button Width="83" Height="37" HorizontalAlignment="Center" Background="#00838f" BorderThickness="0" Foreground="WhiteSmoke" VerticalAlignment="Bottom"  Margin="253,0,464,65" Name="btnPrev" Content="Back"  Click="Prev"/>
+        <Button Width="82" Height="37" HorizontalAlignment="Center" Background="#00838f" BorderThickness="0" Foreground="WhiteSmoke" VerticalAlignment="Bottom"  Margin="652,0,66,65" Name="btnNext" Content="Next"  Click="Next"/>
+        <Button Width="144" Height="43" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#00adbd" Foreground="WhiteSmoke" Margin="31,0,625,386" Content="New Post"  Click="AddPost"/>
+        <Button x:Name="btnEdit" Width="144" Height="43" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#00adbd" Foreground="WhiteSmoke" Margin="31,0,625,315" Content="Edit Post"  Click="EditPost"/>
+        <Button Width="180" BorderThickness="0" Background="#00838f" Foreground="WhiteSmoke" Height="30" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="577,0,43,524" Content="Following"  Click="Following"/>
+        <Button Width="180" BorderThickness="0" Background="#00838f" Foreground="WhiteSmoke" Height="30" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="239,0,381,523" Content="Followers"  Click="Followers"/>
+        <Button Width="144" Height="43" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#00adbd" Foreground="WhiteSmoke" Margin="31,0,625,248" Content="Delete Post" Name="btnDelete" Click="DeletePost"/>
+    </Grid>
+</UserControl>

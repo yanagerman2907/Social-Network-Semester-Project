@@ -1,0 +1,8 @@
+Z:\Non-relational DB\Semester project\WPF\obj\Debug\WPF.csprojAssemblyReference.cache
+Z:\Non-relational DB\Semester project\WPF\obj\Debug\WPF.exe.config
+Z:\Non-relational DB\Semester project\WPF\obj\Debug\MainWindow.g.cs
+Z:\Non-relational DB\Semester project\WPF\obj\Debug\UserInformation\MyPage.g.cs
+Z:\Non-relational DB\Semester project\WPF\obj\Debug\App.g.cs
+Z:\Non-relational DB\Semester project\WPF\obj\Debug\WPF_Content.g.cs
+Z:\Non-relational DB\Semester project\WPF\obj\Debug\WPF_MarkupCompile.cache
+Z:\Non-relational DB\Semester project\WPF\obj\Debug\WPF_MarkupCompile.lref
